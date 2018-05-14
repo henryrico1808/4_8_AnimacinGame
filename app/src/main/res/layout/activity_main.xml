@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:orientation="vertical"
+    tools:context="com.example.henry.a4_8_animacin_game.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="757dp"
+        android:layout_height="596dp"
+        android:layout_x="29dp"
+        android:layout_y="363dp"
+        app:srcCompat="@drawable/dados" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_x="353dp"
+        android:layout_y="16dp"
+        android:gravity="center"
+        android:text="ROULETTE"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/puntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="632dp"
+        android:layout_y="198dp"
+        android:text="Puntuacion"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/puntuacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="741dp"
+        android:layout_y="235dp"
+        android:text="0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgpuntero"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_x="402dp"
+        android:layout_y="69dp"
+        app:srcCompat="@drawable/puntero" />
+
+
+    <ImageView
+        android:id="@+id/imgroulette"
+        android:layout_width="432dp"
+        android:layout_height="424dp"
+        android:layout_gravity="center"
+        android:layout_x="198dp"
+        android:layout_y="93dp"
+        app:srcCompat="@drawable/ro1" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="156dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Apuesta!"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/btnspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_x="375dp"
+        android:layout_y="564dp"
+        android:background="@android:color/darker_gray"
+        android:text="SPIN"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="209dp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="343dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="7dp"
+            android:layout_y="212dp"
+            android:textStyle="bold"
+            android:text="Negro" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="7dp"
+            android:layout_y="245dp"
+            android:textStyle="bold"
+            android:text="Rojo" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Verde" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/animationCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="1085dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="259dp"
+            android:layout_height="196dp"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+            android:layout_x="15dp"
+            android:layout_y="221dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/chips"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="259dp"
+            android:layout_height="196dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="11dp"
+            android:layout_x="152dp"
+            android:layout_y="208dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/chips"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="259dp"
+            android:layout_height="196dp"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_marginEnd="38dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/imageView7"
+            android:layout_x="351dp"
+            android:layout_y="220dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/chips"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="259dp"
+            android:layout_height="196dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_marginEnd="77dp"
+            android:layout_marginTop="126dp"
+            android:layout_x="503dp"
+            android:layout_y="128dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/chips"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="259dp"
+            android:layout_height="196dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:layout_x="610dp"
+            android:layout_y="18dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/chips"
+            tools:layout_editor_absoluteY="248dp" />
+
+
+    </RelativeLayout>
+
+
+
+</AbsoluteLayout>

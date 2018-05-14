@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E64A19"
+    tools:context="com.example.henry.a4_8_animacin_game.SplashScreen">
+
+
+    <RelativeLayout
+        android:id="@+id/animationCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="1085dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#E64A19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="254dp"
+            android:layout_height="279dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:foregroundGravity="center"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/multidoge"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="75dp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="259dp"
+        android:layout_height="196dp"
+        android:layout_marginRight="580dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/chips"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="259dp"
+        android:layout_height="196dp"
+        android:layout_marginRight="360dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/chips"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="259dp"
+        android:layout_height="196dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/chips"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="259dp"
+        android:layout_height="196dp"
+        android:layout_marginRight="456dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/chips"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="259dp"
+        android:layout_height="196dp"
+        android:layout_marginRight="136dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/chips"
+        tools:layout_editor_absoluteY="248dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
